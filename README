@@ -1,0 +1,8 @@
+
+This is a chord chart layout for d3 that allows mulitple categorical
+connections between the same two nodes, and it has a fixed width ribbon,
+where the data is nominal. I needed to show where hospital associations can
+share data (made-up data), and allow connections to be either categorically
+colored or grayed out to signal "inactive" or broken links.
+
+Modified from: https://gist.github.com/chornbaker/251c1f9aa12eed2cedcef8fc33b76df0
