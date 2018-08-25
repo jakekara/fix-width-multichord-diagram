@@ -1,0 +1,119 @@
+ @import url('https://fonts.googleapis.com/css?family=Lato');
+
+ body {
+     font-family: 'Lato', sans-serif;
+     box-sizing: border-box;
+ }
+
+#circle circle {
+  fill: none;
+  pointer-events: all;
+}
+
+.group path {
+  /* stroke: #000; */
+  stroke-width: .25px;
+  fill-opacity: 0.9;
+}
+
+.legend-item.highlight,
+.highlighting path.chord {
+    border: 1px solid navy;
+    stroke: navy;
+}
+path.chord {
+    stroke: #000;
+    stroke: white;
+    stroke-width: .25px;
+    stroke-width: 1px;
+    fill-opacity:0.9;
+  /* fill-opacity: 0.5; */
+}
+
+path.chord{
+    fill: lightskyblue;
+}
+
+.legend-item[data-category="Billing"],
+[data-category="Billing"] path.chord{
+    background-color: lightgreen;
+    fill:lightgreen;
+}
+.legend-item[data-category="Lab work"],
+[data-category="Lab work"] path.chord{
+    fill:lightskyblue;
+    background-color:lightskyblue;
+}
+.legend-item[data-category="Immunizations"],
+[data-category="Immunizations"] path.chord{
+    background-color:pink;    
+    fill:pink;
+}
+.legend-item[data-category="Prescriptions"],
+[data-category="Prescriptions"] path.chord{
+    background-color:lightyellow;    
+    fill:lightyellow;
+}
+
+.group-name{
+    fill: lightskyblue;
+}
+
+svg text{
+    fill: white;
+    fill: navy;
+}
+
+.broken path.chord{
+    fill:#999;
+    fill: #ddd;
+    /* fill-opacity:0.5; */
+}
+
+path.fade {
+  display: none;
+}
+
+.legend-item{
+    background-color: #ddd;
+    border-radius: 3px;
+    margin: 1px;
+    text-align: center;
+}
+
+ #controls, #container{
+     width: 50%;
+ }
+
+ 
+ #controls {
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+     /* justify-content: space-around; */
+ }
+
+ #controls .legend-item{
+     cursor: pointer;
+     display: flex;
+     width: 33.3%;
+     padding: 5px;
+     min-height: 40px;
+     justify-content: center;
+     align-items: center;
+ }
+
+
+ @media only screen and (max-width: 600px) {
+     #controls, #container{
+	 width: 100%;
+     }
+
+
+}
+#meta-container{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+    
